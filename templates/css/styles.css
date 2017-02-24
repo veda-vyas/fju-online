@@ -1,0 +1,14 @@
+.dp {
+	/*border-radius: 50%;*/
+	/*border-radius: 50%;*/
+	border: 1px solid white;
+	margin-top: 20px;
+}
+
+.details p {
+	margin: 10px;
+}
+.details a {
+	margin: 10px;
+	font-size: 16px;
+}

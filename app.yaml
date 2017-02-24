@@ -1,0 +1,167 @@
+application: fju-online
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /templates
+  static_dir: templates
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+- url: /leadership.html
+  static_files: leadership.html
+  upload: leadership\.html
+
+- url: /teaching-process.html
+  static_files: teaching-process.html
+  upload: teaching-process\.html
+
+- url: /learning-process.html
+  static_files: learning-process.html
+  upload: learning-process\.html
+
+- url: /target-student-body.html
+  static_files: target-student-body.html
+  upload: target-student-body\.html
+
+- url: /type-of-delivery.html
+  static_files: type-of-delivery.html
+  upload: type-of-delivery\.html
+
+- url: /affordable-cost.html
+  static_files: affordable-cost.html
+  upload: affordable-cost\.html
+
+- url: /domain-specializations.html
+  static_files: domain-specializations.html
+  upload: domain-specializations\.html
+
+- url: /rajreddybio.html
+  static_files: rajreddybio.html
+  upload: rajreddybio\.html
+
+- url: /robertsullivanbio.html
+  static_files: robertsullivanbio.html
+  upload: robertsullivanbio\.html
+
+- url: /lynnrobertcarterbio.html
+  static_files: lynnrobertcarterbio.html
+  upload: lynnrobertcarterbio\.html
+
+- url: /teaching-process---details.html
+  static_files: teaching-process---details.html
+  upload: teaching-process---details\.html
+
+- url: /learning-process---details.html
+  static_files: learning-process---details.html
+  upload: learning-process---details\.html
+
+- url: /certificate-programs.html
+  static_files: certificate-programs.html
+  upload: certificate-programs\.html
+
+- url: /object-oriented-programming.html
+  static_files: object-oriented-programming.html
+  upload: object-oriented-programming\.html
+
+- url: /databases.html
+  static_files: databases.html
+  upload: databases\.html
+
+- url: /web-app-development-front-end.html
+  static_files: web-app-development-front-end.html
+  upload: web-app-development-front-end\.html
+
+- url: /web-app-development-server-side.html
+  static_files: web-app-development-server-side.html
+  upload: web-app-development-server-side\.html
+
+- url: /android-app-development.html
+  static_files: android-app-development.html
+  upload: android-app-development\.html
+
+- url: /advance-android-app-development.html
+  static_files: advance-android-app-development.html
+  upload: advance-android-app-development\.html
+
+- url: /masters-degree-programs.html
+  static_files: masters-degree-programs.html
+  upload: masters-degree-programs\.html
+
+- url: /software-development-practices.html
+  static_files: software-development-practices.html
+  upload: software-development-practices\.html
+
+- url: /software-process.html
+  static_files: software-process.html
+  upload: software-process\.html
+
+- url: /course-catalog.html
+  static_files: course-catalog.html
+  upload: course-catalog\.html
+
+- url: /application-process.html
+  static_files: application-process.html
+  upload: application-process\.html
+
+- url: /admission-test.html
+  static_files: admission-test.html
+  upload: admission-test\.html
+
+- url: /interview--counseling.html
+  static_files: interview--counseling.html
+  upload: interview--counseling\.html
+
+- url: /tuition.html
+  static_files: tuition.html
+  upload: tuition\.html
+
+- url: /foundation-scholarships.html
+  static_files: foundation-scholarships.html
+  upload: foundation-scholarships\.html
+
+- url: /merit-scholarships.html
+  static_files: merit-scholarships.html
+  upload: merit-scholarships\.html
+
+- url: /need-based-scholarships.html
+  static_files: need-based-scholarships.html
+  upload: need-based-scholarships\.html
+
+- url: /company-sponsorships.html
+  static_files: company-sponsorships.html
+  upload: company-sponsorships\.html
+
+- url: /deferred-tuition.html
+  static_files: deferred-tuition.html
+  upload: deferred-tuition\.html
+
+- url: /teaching-assistant.html
+  static_files: teaching-assistant.html
+  upload: teaching-assistant\.html
+
+- url: /degrees--programs.html
+  static_files: degrees--programs.html
+  upload: degrees--programs\.html
+
+- url: /contact-us.html
+  static_files: contact-us.html
+  upload: contact-us\.html
+  
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest
