@@ -105,7 +105,7 @@ h1 {
 	    /*color: #f2f1eb;*/
 	    text-decoration: none;
 	    width: 100%;
-	    z-index: 999;
+	    z-index: 9999;
 	    padding-top: 30px;
 	    min-height: 80px;
 	}
