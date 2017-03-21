@@ -85,8 +85,15 @@ class Navbar(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('navbar_responsive.html')
         self.response.write(template.render(template_values))
 
+class NavbarMasters(webapp2.RequestHandler):
+    def get(self):
+        template_values = {"authorized":True}
+        template = JINJA_ENVIRONMENT.get_template('navbar_responsive_masters.html')
+        self.response.write(template.render(template_values))
+
 app = webapp2.WSGIApplication([
     ('/', HomeHandler),
     ('/send_message', SendMessageHandler),
-    ('/navbar', Navbar)
+    ('/navbar', Navbar),
+    ('/navbar_masters', NavbarMasters)
 ], debug=True)

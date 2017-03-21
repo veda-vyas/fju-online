@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mobile App Developer Diploma</title>
+	<title>Mobile App Developer Masters Degree</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="js/googleanalytics.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -26,7 +26,7 @@
 			dataobj[data[i].split('=')[0]] = data[i].split('=')[1];
 		}
 
-		$.post( "/diploma/formsubmit", dataobj, function( data ) {
+		$.post( "/masters/formsubmit", dataobj, function( data ) {
 		   	if (data.startsWith("redirect")) {
 		   		localStorage.setItem("selected_date",data.substr(8,10))
 		   		localStorage.setItem("email",data.substr(18))
@@ -54,7 +54,7 @@
 	<div id="navbar_field"></div>
 	<div id="small_head" class="container col-md-12 text-xs-center"><br><br><br>
 		<h1>Mobile App Development</h1>
-		<h3 style="font-weight: 100;">Online Diploma Program</h3>
+		<h3 style="font-weight: 100;">Online Masters Degree Program</h3>
 		<h5 style="font-weight: 100;">Learning to Create Android Apps. Mastery in 6 Months</h5><br>
 	</div>
 		<!-- <div class="col-md-3"></div><div class="col-md-3"></div> -->
@@ -68,7 +68,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<!-- <h1 class="text-xs-center">FJU Android Diploma Program</h1><br> -->
+			<!-- <h1 class="text-xs-center">FJU Android Masters Degree Program</h1><br> -->
 			<div class="col-md-2"></div>
 			<div id="stepscontainer" class="col-md-8">
 				<!-- <hr> --><br><br>

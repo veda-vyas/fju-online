@@ -4,6 +4,8 @@ runtime: python27
 api_version: 1
 threadsafe: no
 
+default_expiration: "360d"
+
 handlers:
 - url: /templates/templates
   static_dir: templates
@@ -28,22 +30,22 @@ handlers:
 - url: /files
   static_dir: files
 
-- url: /diploma/img
+- url: /masters/img
   static_dir: img
 
-- url: /diploma/js
+- url: /masters/js
   static_dir: js
 
-- url: /diploma/css
+- url: /masters/css
   static_dir: css
 
-- url: /diploma/pdf
+- url: /masters/pdf
   static_dir: pdf
 
-- url: /diploma/files
+- url: /masters/files
   static_dir: files
 
-- url: /diploma/templates
+- url: /masters/templates
   static_dir: templates
   application_readable: true
 
@@ -187,8 +189,8 @@ handlers:
 #   static_files: contact-us.html
 #   upload: contact-us\.html
 
-- url: /diploma.*
-  script: diploma.app
+- url: /masters.*
+  script: masters.app
 
 - url: .*
   script: main.app

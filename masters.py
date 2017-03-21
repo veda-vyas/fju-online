@@ -296,14 +296,14 @@ class Navbar(webapp2.RequestHandler):
 #         self.response.status_int = 404
 
 app = webapp2.WSGIApplication([
-    ('/diploma/?', HomeHandler),
-    ('/diploma/enroll', EnrollmentHandler),
-    ('/diploma/course', ProjectPageHandler),
-    ('/diploma/formsubmit',formSubmitHandler),
-    ('/diploma/datesubmit',dateSubmitHandler),
-    ('/diploma/getavailableslots',SlotsHandler),
-    ('/diploma/programming_diploma', ProgrammingDiploma),
-    ('/diploma/navbar', Navbar)
+    ('/masters/?', HomeHandler),
+    ('/masters/enroll', EnrollmentHandler),
+    ('/masters/course', ProjectPageHandler),
+    ('/masters/formsubmit',formSubmitHandler),
+    ('/masters/datesubmit',dateSubmitHandler),
+    ('/masters/getavailableslots',SlotsHandler),
+    ('/masters/programming_masters', ProgrammingDiploma),
+    ('/masters/navbar', Navbar)
     # ('/sendmail', SendEmailHandler)
     # ('/user/confirm', ConfirmEmailHandler),
 ], debug=True)

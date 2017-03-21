@@ -228,7 +228,7 @@
 	//     datesDisabled: localStorage.getItem('selected_dates').split(",")
 	// });
 	datamain = {}
-	$.post( "/diploma/getavailableslots", function( data ) {
+	$.post( "/masters/getavailableslots", function( data ) {
 		data = JSON.parse(data)
 		datamain = data;
 		keys = []
@@ -270,7 +270,7 @@
 		dataobj["selected_time"] = selected_time;
 		console.log(dataobj)
 		if (selected_date!="") {
-			$.post( "/diploma/datesubmit", dataobj, function( data ) {
+			$.post( "/masters/datesubmit", dataobj, function( data ) {
 				data = data.split("$")
 				localStorage.setItem('email', data[2])
 				localStorage.setItem('selected_date', data[0])
