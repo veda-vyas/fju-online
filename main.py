@@ -87,6 +87,6 @@ class Navbar(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', HomeHandler),
-    ('/send_message', SendMessageHandler),
+    #('/send_message', SendMessageHandler),
     ('/navbar', Navbar)
 ], debug=True)
